@@ -8,7 +8,7 @@ def main():
     while True:
         for line in sys.stdin.xreadlines():
             now = pytai.now()
-            print "%s %s" % (now.to_tai64n_ext(), line),
+            sys.stdout.write("%s %s" % (now.to_tai64n_ext(), line))
         sys.stdout.flush()
         time.sleep(1)
         if not sys.stdin.closed:

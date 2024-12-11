@@ -1,12 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
 import pytai
 import sys
 import time
 import re
-
-import os
-sys.path.append(os.environ['HOME'] + '/bin')
 
 def main():
     tairegex = re.compile(r'^(@[0-9a-f]{24})', re.IGNORECASE)
